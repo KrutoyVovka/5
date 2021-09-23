@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Lesson 5</title>
+	<meta charset="UTF-8" />
+	<!-- <meta name="format-detection" content="telephone=no"> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700;display=swap;subset=cyrillic-ext" rel="stylesheet" /> -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> -->
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class='container'>
+				<nav class="header__menu">
+					<ul class="header__list">
+						<li class="header__item">
+							<a href="index.html" class="header__link">Домашняя работа</a>
+						</li>
+						<li class="header__item">
+							<a href="index1.html" class="header__link">Дополнительное задание</a>
+						</li>
+					</ul>
+				</nav>
+				<h1 class="header__title">СВОЙСТВА БЛОКОВ</h1>
+				<nav class="header__menu menu1">
+					<ul class="header__list list1">
+						<li class="header__item item1">
+							<a href="#padding" class="header__link link1">padding</a>
+						</li>
+						<li class="header__item item1">
+							<a href="#margin" class="header__link link1">margin</a>
+						</li>
+						<li class="header__item item1">
+							<a href="#width" class="header__link link1">width</a>
+						</li>
+						<li class="header__item item1">
+							<a href="#height" class="header__link link1">height</a>
+						</li>
+						<li class="header__item item1">
+							<a href="#overflow" class="header__link link1">overflow</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</header>
+		<main class="main">
+			<section id="padding" class="padding">
+				<h2 class="section__title">padding</h2>
+				<div class="container">
+					<div class="padding__blocks">
+						<div class="padding__block">
+							<p class="padding__block_text">Свойство padding для блочного элемента отталкивает содержимое элемента внутрь, то есть получается расстояние между краем контента и границей блока</p>
+						</div>
+						<div class="padding__block2">
+							<p class="padding__block_text">Конечно, я могу менять отступы для каждой стороны блока отдельно (Жека научил) </p>
+						</div>
+					</div>
+					<div class="padding__blocks">
+						<div class="padding__block3">
+							<p class="padding__block_text">при указании значения в процентах значение берется от ширины родителя объекта</p>
+						</div>
+						<div class="padding__block4">
+							<p class="padding__block_text">это свойство, как и другие, перечисленные ниже, не наследуется</p>
+						</div>
+					</div>
+					<div class="padding__blocks">
+						<p class="padding__inline">
+							Для строчного элемента свойство padding работает не так, как надо. Вот что получается... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, ad necessitatibus assumenda inventore voluptatem, rem labore suscipit in natus sapiente recusandae provident illum neque? Tempore porro placeat soluta ullam id.
+							<span>Становится понятно, что свойство применяется к строке</span>
+						</p>
+					</div>
+					<div class="padding__blocks">
+						<div class="padding__image padding__image1">
+							<p>Для изображений внутренний отступ работает так:</p>
+							<img src="img/favicon.ico" alt="foto" />
+						</div>
+						<div class="padding__image padding__image2">
+							<p>ну или так, к примеру:</p>
+							<img src="img/favicon.ico" alt="foto" />
+						</div>
+					</div>
+					<p class="padding__text">
+						Запомни, свойство padding не может иметь отрицательные значения
+					</p>
+
+				</div>
+			</section>
+			<section id="margin" class="margin">
+				<h2 class="section__title">margin</h2>
+				<div class="container">
+					<div class="margin__blocks margins">
+						<div class="margin__block margin__block1">
+							<p class="margin__block_text">Свойство margin для блочного элемента отталкивает сам элемент от окружающих блоков или окружающие блоки отталкивает от элемента</p>
+						</div>
+						<div class="margin__block margin__block2">
+							<p class="margin__block_text">Также, как и padding, свойство margin можно применять для каждой стороны блока отдельно</p>
+						</div>
+					</div>
+					<div class="margin__blocks margins">
+						<div class="margin__block_center margin-center">
+							<p class="margin-center__text">чтобы отцентровать блочный элемент по горизонтали (при условии, что он ограничен по ширине и уже, чем родитель), нужно задать для него свойство margin со значением: 0px auto</p>
+						</div>
+					</div>
+					<div class="margin__blocks margins">
+						<div class="margin__block_center margin-ib">
+							<p class="margin-center__text">для строчно-блочных элементов это не работает</p>
+						</div>
+					</div>
+					<div class="margin__blocks">
+						<p class="margin__inline">
+							Для строчного элемента свойство margin работает не так, как надо. Вот что получается... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, ad necessitatibus assumenda inventore voluptatem, rem labore suscipit in natus sapiente recusandae provident illum neque? Tempore porro placeat soluta ullam id.
+							<span>Становится понятно, что свойство задает отступ для певрой строки текста</span>
+						</p>
+					</div>
+					<div class="margin__blocks">
+						<div class="margin__image margin__image1">
+							<p>Для изображений внешний отступ работает так:</p>
+							<div class="image-margin"><img src="img/favicon.ico" alt="foto" /></div>
+							<div class="image-margin"><img src="img/favicon.ico" alt="foto" /></div>
+						</div>
+						<div class="margin__image margin__image2">
+							<p>ну или так:</p>
+							<div class="image-margin2"><img src="img/favicon.ico" alt="foto" /></div>
+							<div class="image-margin2"><img src="img/favicon.ico" alt="foto" /></div>
+						</div>
+					</div>
+					<p class="margin__text">
+						Запомни, свойство margin может иметь отрицательные значения. В этом его СУПЕРСИЛА.
+					</p>
+					<p>Блоки, находящиеся с противоположной стороны элемента, к которой применяем отрицательный внешний отступ, не будут отрываться от него</p>
+					<div class="margin__blocks margins2">
+						<div class="margin__block margins__block1">
+							<p class="margin__block_text">При этом элемент как бы выезжает за границы блока-родителя...</p>
+						</div>
+						<div class="margin__block margins__block2">
+							<p class="margin__block_text2">... или наезжает на соседний элемент</p>
+						</div>
+					</div>
+
+
+				</div>
+			</section>
+			<section id="width" class="width">
+				<h2 class="section__title">width</h2>
+				<div class="container">
+					<div class="width__blocks">
+						<div class="width__block width-block1">
+							<p class="width__block_text">Свойство width устанавливает ширину блочных и некоторых блочно-строчных элеменов</p>
+						</div>
+						<div class="width__block_parent">
+							<div class="width__block width-block2">
+								<p class="width__block_text">Принимает значения как в px, так и в процентах. В этом случае значение считается от ширины родителя</p>
+							</div>
+							Это 100% ширины родителя
+						</div>
+					</div>
+					<div class="width__blocks">
+						<p class="width__inline">
+							Для строчного элемента свойство width не работает
+						<p class="width__inline">
+							Попробовал задать 10%, не работает
+						</p>
+					</div>
+					<div class="width__blocks">
+						<div class="width__image width__image1">
+							<p>А с изображениями работает по всякому</p>
+							<img src="img/favicon.ico" alt="foto" />
+							<p>width: 200px</p>
+						</div>
+						<div class="width__image width__image2">
+							<p>ну или так, к примеру:</p>
+							<img src="img/favicon.ico" alt="foto" />
+							<p>width: 30%;</p>
+						</div>
+					</div>
+					<p class="width__text">
+						У свойства width есть 2 ограничителя: min-widht и max-widht
+					</p>
+					<div class="width__blocks">
+						<div class="minwidth__block">
+							<p class="width__block_text">Свойство min-width задает минимальную ширину элемента, сжимаясь до значения которой он не будет ломаться.</p>
+							<p class="width__block_text"> Это значение должно быть указано в px.</p>
+						</div>
+						<div class="maxwidth__block">
+							<p class="width__block_text">Свойство max-width задает максимальную ширину элемента, больше которой он не будет растягиваться, но сжиматься сможет.</p>
+						</div>
+					</div>
+					<div class="width__blocks">
+						<div class="width__image width__image3">
+							<p>Попробуем применить это свойство к изображениям</p>
+							<img src="img/1.jpg" alt="foto" />
+							<p>min-width: 400px;</p>
+						</div>
+						<div class="width__image width__image4">
+							<p>ну или так, к примеру:</p>
+							<img src="img/1.jpg" alt="foto" />
+							<p>min-width: 200px;</p>
+							max-width: 400px;
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section id="height" class="height">
+				<h2 class="section__title">height</h2>
+				<div class="container">
+					<div class="height__blocks">
+						<div class="height__block height-block1">
+							<p class="height__block_text">Свойство height устанавливает высоту блочных и некоторых блочно-строчных элеменов</p>
+							<p class="height__block_text">Работает оно также, как и свойство width.</p>
+						</div>
+					</div>
+
+					<p class="height__text">
+						У свойства height также есть 2 ограничителя: min-height и max-height
+					</p>
+
+
+					<div class="height__blocks">
+						<div class="minheight__block">
+							<p class="height__block_text">Свойство min-height задает минимальную высоту элемента, сжимаясь до значения которой он не будет ломаться.</p>
+							<p class="height__block_text"> Это значение должно быть указано в px.</p>
+						</div>
+						<div class="maxheight__block">
+							<p class="height__block_text">Свойство max-height задает максимальную ширину элемента, больше которой он не будет растягиваться, но сжиматься сможет.</p>
+							<p class="height__block_text">В этом случае высота элемента будет зависеть от величины контента.</p>
+							<p class="height__block_text">То есть, если контента в элементе меньше, чем значение свойства max-height, то высота элемента будет равна высоте контента (не считая отступов).</p>
+							<p class="height__block_text">А если контента больше, чем значение свойства max-height, то высота элемента будет равна этому значению.</p>
+							<p class="height__block_text">Но, в таком случае, контент выйдет за пределы элемента. </p>
+							<p class="height__block_text">Как сейчас: Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quisquam iste numquam officia neque nisi nam soluta deleniti ipsum esse expedita, totam velit exercitationem adipisci ea. Reiciendis obcaecati eveniet molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore similique ipsa quidem officiis at aut accusamus quis dolorem dignissimos beatae mollitia asperiores sed, perferendis doloribus eveniet, expedita, enim quas aspernatur!</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="overflow" class="overflow">
+				<h2 class="section__title">overflow</h2>
+				<div class="container">
+					<div class="height__blocks">
+						<div class="maxheight__block maxheight__block_hidden">
+							<p class="height__block_text">И здесь нам на помощь приходит следующее свойство. </p>
+							<p class="height__block_text">Свойство overflow управляет отображением состояния блочного элемента. То есть можно оставить пример выше в таком же состоянии, а можно то, что не вмещается в элемент, скрыть.</p>
+							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+
+						</div>
+						<div class="maxheight__block maxheight__block_scroll">
+							<p class="height__block_text">С помощью этого свойства можно применить к элементу, у которого контент не вмещается по высоте, прокрутку</p>
+							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+
+						</div>
+						<div class="maxheight__block maxheight__block_auto">
+							<p class="height__block_text">Либо скролл будет добавляться автоматически при необходимости</p>
+							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+						</div>
+					</div>
+					<div class="height__blocks">
+						<div class="height__image height__image3">
+							<p>Попробуем применить это свойство к изображениям</p>
+							<img src="img/1.jpg" alt="foto" />
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="example-block">
+				<div class="example-block__content">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus odio non iure qui veritatis laboriosam fuga ad sunt esse provident. Non voluptatum dolor omnis eum cumque inventore! Eligendi, quo autem.
+				</div>
+
+			</div>
+
+		</footer>
+		<footer class="footer1">
+			<div class="example-block">
+				<div class="example-block__content">
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus odio non iure qui veritatis laboriosam fuga ad sunt esse provident. Non voluptatum dolor omnis eum cumque inventore! Eligendi, quo autem.
+				</div>
+
+			</div>
+
+		</footer>
+
+	</div>
+</body>
+
+</html>
