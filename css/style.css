@@ -493,14 +493,14 @@ section {
 .box__block {
 	/* max-width: 900px; */
 	width: 900px;
-	height: 200px;
+	height: 300px;
 	background-color: #fcad04;
 	padding: 30px 50px;
 	margin: 0px auto 30px;
 }
 .box__block_content {
 	/* max-width: 900px; */
-	height: 200px;
+	height: 300px;
 	width: 900px;
 	box-sizing: content-box;
 }
@@ -550,16 +550,32 @@ section {
 	margin: 20px;
 }
 .example-block__content {
+	display: block;
+	text-transform: uppercase;
 	font-size: 50px;
 	line-height: 100%;
 	border: 1px solid #fff;
 	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-	width: 900px;
-	margin: 10px auto;
+	/* width: 900px;
+	margin: 10px auto; */
 	text-align: center;
 	color: #fff;
 	padding: 30px;
+}
+.example-block__btn {
+	text-transform: uppercase;
+	display: inline-block;
+	font-size: 30px;
+	line-height: 100%;
+	border: 1px solid #fff;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	/* width: 900px;
+	margin: 10px auto; */
+	text-align: center;
+	color: #fff;
+	padding: 10px 30px;
 }
 .example-block__content :link {
 }
