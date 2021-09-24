@@ -156,7 +156,7 @@ section {
 	background-color:#A64AC9;
 	font-size: 30px;
 	font-weight: 700;
-	letter-spacing: 1.5;
+	letter-spacing: 1.5px;
 	padding: 20px;
 	line-height: 150%;
 	text-align: center;
@@ -180,7 +180,7 @@ section {
 .margin__block {
 	width: 45%;
 	display: inline-block;
-	background-color: ;
+	/* background-color: ; */
 	margin: 30px;
 }
 .margin__block1 {
@@ -252,7 +252,7 @@ section {
 	background-color:#A64AC9;
 	font-size: 30px;
 	font-weight: 700;
-	letter-spacing: 1.5;
+	letter-spacing: 1.5px;
 	margin: 0 0 30px 0;
 	line-height: 150%;
 	text-align: center;
@@ -352,7 +352,7 @@ width: 80%;
 	background-color:#A64AC9;
 	font-size: 30px;
 	font-weight: 700;
-	letter-spacing: 1.5;
+	letter-spacing: 1.5px;
 	padding: 20px;
 	line-height: 150%;
 	text-align: center;
@@ -453,12 +453,12 @@ height: 80%;
 	background-color:#A64AC9;
 	font-size: 30px;
 	font-weight: 700;
-	letter-spacing: 1.5;
+	letter-spacing: 1.5px;
 	padding: 20px;
 	line-height: 150%;
 	text-align: center;
 	color: #F5E6CC;
-margin: 0px 0px 50px 0px;
+	margin: 0px 0px 50px 0px;
 
 }
 
