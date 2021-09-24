@@ -79,14 +79,28 @@
 						</div>
 					</div>
 					<div class="display__blocks">
-						<div class="display__image display__image1">
+						<div class="display__image">
 							<p>A это тег img. Про него мы тоже будем говорить</p>
 							<img src="img/favicon.ico" alt="foto" />
 						</div>
 					</div>
 					<p class="display__text">
-						И самое крутое значение - это dispay: none. С его помощью скрыт первый вариант footera
+						И самое крутое значение - это dispay: none. С его помощью скрыты заголовки секций и первый вариант footera
 					</p>
+					<div class="display__blocks">
+						<div class="display__block display__block_inline">
+							<p class="display__block_text">Теперь это не обычный div, a строчный div. Он перестал занимать всю ширину родителя и на него больше не действуют свойства блоков. А все из-за свойства dispay со значением inline</p>
+						</div>
+						<div class="display__block display__block_block">
+							<span>А это необычный span. Он стал блочным. Из него теперь можно строить. Значение dispay со свойством block.</span>
+						</div>
+					</div>
+					<div class="display__blocks">
+						<div class="display__image1">
+							<p>Для тега img задали свойство dispay со значением inline. Но на него по прежнему действуют свойства блоков.</p>
+							<img src="img/favicon.ico" alt="foto" />
+						</div>
+					</div>
 
 				</div>
 			</section>
@@ -103,10 +117,10 @@
 					</div>
 					<div class="padding__blocks">
 						<div class="padding__block3">
-							<p class="padding__block_text">при указании значения в процентах значение берется от ширины родителя объекта</p>
+							<p class="padding__block_text">При указании значения в процентах значение берется от ширины родителя объекта</p>
 						</div>
 						<div class="padding__block4">
-							<p class="padding__block_text">это свойство, как и другие, перечисленные ниже, не наследуется</p>
+							<p class="padding__block_text">Это свойство, как и другие, перечисленные ниже, не наследуется</p>
 						</div>
 					</div>
 					<div class="padding__blocks">
@@ -126,7 +140,7 @@
 						</div>
 					</div>
 					<p class="padding__text">
-						Запомни, свойство padding не может иметь отрицательные значения
+						Запомни: свойство padding не может иметь отрицательные значения
 					</p>
 
 				</div>
@@ -144,12 +158,12 @@
 					</div>
 					<div class="margin__blocks margins">
 						<div class="margin__block_center margin-center">
-							<p class="margin-center__text">чтобы отцентровать блочный элемент по горизонтали (при условии, что он ограничен по ширине и уже, чем родитель), нужно задать для него свойство margin со значением: 0px auto</p>
+							<p class="margin-center__text">Чтобы отцентровать блочный элемент по горизонтали (при условии, что он ограничен по ширине и уже, чем родитель), нужно задать для него свойство margin со значением: 0px auto</p>
 						</div>
 					</div>
 					<div class="margin__blocks margins">
 						<div class="margin__block_center margin-ib">
-							<p class="margin-center__text">для строчно-блочных элементов это не работает</p>
+							<p class="margin-center__text">Для строчно-блочных элементов это не работает</p>
 						</div>
 					</div>
 					<div class="margin__blocks">
@@ -165,7 +179,7 @@
 							<div class="image-margin"><img src="img/favicon.ico" alt="foto" /></div>
 						</div>
 						<div class="margin__image margin__image2">
-							<p>ну или так:</p>
+							<p>или так:</p>
 							<div class="image-margin2"><img src="img/favicon.ico" alt="foto" /></div>
 							<div class="image-margin2"><img src="img/favicon.ico" alt="foto" /></div>
 						</div>
