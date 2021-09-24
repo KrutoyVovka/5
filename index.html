@@ -32,6 +32,9 @@
 				<nav class="header__menu menu1">
 					<ul class="header__list list1">
 						<li class="header__item item1">
+							<a href="#display" class="header__link link1">display</a>
+						</li>
+						<li class="header__item item1">
 							<a href="#padding" class="header__link link1">padding</a>
 						</li>
 						<li class="header__item item1">
@@ -46,12 +49,47 @@
 						<li class="header__item item1">
 							<a href="#overflow" class="header__link link1">overflow</a>
 						</li>
+						<li class="header__item item1">
+							<a href="#box-sizing" class="header__link link1">box-sizing</a>
+						</li>
 					</ul>
 				</nav>
 
 			</div>
 		</header>
 		<main class="main">
+			<section id="display" class="display">
+				<h2 class="section__title">display</h2>
+				<div class="container">
+					<div class="display__blocks">
+						<div class="display__block">
+							<p class="display__block_text">Сначала о главном. Суперсвойство dispay, позволяющее из css-файла менять значение для элементов, определяющее, как они будут себя вести))</p>
+						</div>
+						<div class="display__block display__block_block">
+							<p class="display__block_text">Это обычный div. Он занимает всю ширину родителя и на него действуют все свойства, о которых будет идти речь. Для него свойство dispay по умолчанию имеет значение block</p>
+						</div>
+						<div class="display__block display__block_inline">
+							<span>Это обычный span. На него не действует ни одно свойство из урока. Значение dispay по умолчанию inline</span>
+						</div>
+						<div class="display__block display__block_inlineblock">
+							<p class="display__block_text">А это гибрид div и span. К нему можно применить почти все свойства из урока.</p>
+						</div>
+						<div class="display__block display__block_inlineblock">
+							<p class="display__block_text">И это гибрид div и span. Значение свойства dispay так и называется: inline-block</p>
+						</div>
+					</div>
+					<div class="display__blocks">
+						<div class="display__image display__image1">
+							<p>A это тег img. Про него мы тоже будем говорить</p>
+							<img src="img/favicon.ico" alt="foto" />
+						</div>
+					</div>
+					<p class="display__text">
+						И самое крутое значение - это dispay: none. С его помощью скрыт первый вариант footera
+					</p>
+
+				</div>
+			</section>
 			<section id="padding" class="padding">
 				<h2 class="section__title">padding</h2>
 				<div class="container">
@@ -245,42 +283,75 @@
 				<div class="container">
 					<div class="height__blocks">
 						<div class="maxheight__block maxheight__block_hidden">
-							<p class="height__block_text">И здесь нам на помощь приходит следующее свойство. </p>
-							<p class="height__block_text">Свойство overflow управляет отображением состояния блочного элемента. То есть можно оставить пример выше в таком же состоянии, а можно то, что не вмещается в элемент, скрыть.</p>
-							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
-							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
-							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="overflow__block_text">И здесь нам на помощь приходит следующее свойство. </p>
+							<p class="overflow__block_text">Свойство overflow управляет отображением состояния блочного элемента. То есть можно оставить пример выше в таком же состоянии, а можно то, что не вмещается в элемент, скрыть.</p>
+							<p class="overflow__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="overflow__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="overflow__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
 
 						</div>
 						<div class="maxheight__block maxheight__block_scroll">
-							<p class="height__block_text">С помощью этого свойства можно применить к элементу, у которого контент не вмещается по высоте, прокрутку</p>
-							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
-							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
-							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="overflow__block_text">С помощью этого свойства можно применить к элементу, у которого контент не вмещается по высоте, прокрутку. Вот так:</p>
+							<p class="overflow__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="overflow__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="overflow__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
 
 						</div>
 						<div class="maxheight__block maxheight__block_auto">
-							<p class="height__block_text">Либо скролл будет добавляться автоматически при необходимости</p>
-							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
-							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
-							<p class="height__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="overflow__block_text">Либо скролл будет добавляться автоматически при необходимости</p>
+							<p class="overflow__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="overflow__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
+							<p class="overflow__block_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos amet recusandae reiciendis exercitationem adipisci soluta nesciunt ipsam temporibus pariatur quae cum atque minima vero iure perferendis ea, asperiores hic ex! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos itaque neque omnis ut adipisci ea fuga dolor consectetur saepe, eum accusantium porro nam vero reiciendis laboriosam facilis perferendis error placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis in hic voluptas. Quisquam asperiores nisi id amet rerum praesentium accusamus reprehenderit esse at, architecto voluptatibus officia fuga ad. Vel odio, officiis alias velit quod non, modi soluta expedita voluptatem architecto quibusdam exercitationem qui provident doloremque nam mollitia molestias quidem, quaerat quam est amet itaque? Fugiat omnis sit quas. Dolores totam incidunt veritatis autem vitae perspiciatis, facilis voluptatem enim dolor quas ullam tempore voluptate vero aut temporibus recusandae, debitis amet dicta dolore cupiditate consequatur ad rerum velit saepe! Natus sapiente aliquid illum numquam error tempora est pariatur ducimus accusamus, neque hic?</p>
 						</div>
 					</div>
 					<div class="height__blocks">
-						<div class="height__image height__image3">
-							<p>Попробуем применить это свойство к изображениям</p>
+						<div class="overflow__image overflow__image3">
+							<p>Попробуем применить это свойство к блоку с изображением</p>
 							<img src="img/1.jpg" alt="foto" />
 						</div>
 					</div>
+					<p class="overflow__text">
+						В последнем примере блок с картинкой строчно-блочный (display: inline-block), следовательно, свойство overflow можно применять к строчно-блочным элементам.
+					</p>
+
 				</div>
 
 			</section>
+			<section id="box-sizing" class="box-sizing">
+				<h2 class="section__title">box-sizing</h2>
+				<div class="container">
+					<div class="box__blocks">
+						<div class="box__block">
+							<p class="box__block_text">До этого времени во всех примерах для расчета размеров блочных и строчно-блочных элементов (ширина и высота) использовалось свойство box-sizing со значением border-box. </p>
+							<p class="box__block_text text-c">
+								width: 900px;<br>
+								height: 300px;<br>
+								значения свойства padding входят в размер по высоте и ширине (ну еще и толщина границы, если она есть)
+							</p>
+						</div>
+
+
+
+						<div class="box__block box__block_content">
+							<p class="box__block_text">У этого свойства есть еще одно значение: content-box. Вот что мы получим:</p>
+							<p class="box__block_text text-c">
+								width: 900px;<br>
+								height: 300px;<br>
+								значения свойства padding <span>не</span> входят в размер по высоте и ширине
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 		</main>
 		<footer class="footer">
 			<div class="example-block">
-				<div class="example-block__content">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus odio non iure qui veritatis laboriosam fuga ad sunt esse provident. Non voluptatum dolor omnis eum cumque inventore! Eligendi, quo autem.
-				</div>
+				<a class="example-block__content" href="#top">
+					<!-- <div class="example-block__content"> -->
+					в начало
+					<!-- </div> -->
+				</a>
 
 			</div>
 
