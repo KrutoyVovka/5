@@ -19,6 +19,8 @@ COLORS_1 {
 body {
 	background-color: rgba(90, 85, 96, 0.9);
 	font-family: "Barlow Condensed", sans-serif;
+	font-size: 20px;
+	line-height: 150%;
 }
 .container {
 	max-width: 1040px;
@@ -270,7 +272,7 @@ section {
 }
 .width-block1 {
 	width: 500px;
-	margin: 0px auto;
+	margin: 0px auto 10px;
 }
 .width-block2 {
 	width: 80%;
@@ -406,6 +408,17 @@ section {
 	height: 100%;
 	max-height: 500px;
 }
+.height__text {
+	background-color: #a64ac9;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	padding: 20px;
+	line-height: 150%;
+	text-align: center;
+	color: #f5e6cc;
+	margin: 0px 0px 50px 0px;
+}
 .overflow__text {
 	background-color: #a64ac9;
 	font-size: 30px;
@@ -421,16 +434,29 @@ section {
 	margin: 0px 0px 30px 0px;
 }
 .box__block {
-	max-height: 300px;
+	/* max-width: 900px; */
+	width: 900px;
+	height: 200px;
 	background-color: #fcad04;
-	padding: 30px;
-	margin: 0px auto 80px;
+	padding: 30px 50px;
+	margin: 0px auto 30px;
 }
-.box__block_hidden {
-	overflow: hidden;
+.box__block_content {
+	/* max-width: 900px; */
+	height: 200px;
+	width: 900px;
+	box-sizing: content-box;
 }
 .box__block_text {
 	background-color: #fccd04;
+	padding: 5px 10px;
+}
+.text-c {
+	text-align: center;
+}
+.box__block_text span {
+	color: red;
+	font-weight: 700;
 }
 .box__image {
 	display: inline-block;

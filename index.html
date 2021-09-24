@@ -286,9 +286,24 @@
 				<h2 class="section__title">box-sizing</h2>
 				<div class="container">
 					<div class="box__blocks">
-						<div class="box__block box__block_hidden">
-							<p class="box__block_text">И здесь нам на помощь приходит следующее свойство. </p>
+						<div class="box__block">
+							<p class="box__block_text">До этого времени во всех примерах для расчета размеров блочных и строчно-блочных элементов (ширина и высота) использовалось свойство box-sizing со значением border-box. </p>
+							<p class="box__block_text text-c">
+								width: 900px;<br>
+								height: 200px;<br>
+								значения свойства padding входят в размер по высоте и ширине
+							</p>
+						</div>
 
+
+
+						<div class="box__block box__block_content">
+							<p class="box__block_text">У этого свойства есть еще одно значение: content-box. Вот что мы получим:</p>
+							<p class="box__block_text text-c">
+								width: 900px;<br>
+								height: 200px;<br>
+								значения свойства padding <span>не</span> входят в размер по высоте и ширине
+							</p>
 						</div>
 						<div class="box__blocks">
 							<div class="box__image box__image3">
